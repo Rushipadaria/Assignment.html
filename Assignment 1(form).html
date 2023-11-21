@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> form | html </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: red;
+            margin: 2% 0%;
+        }
+
+        .main {
+            width: 95%;
+            margin: 0 auto;
+            background-color: aqua;
+            padding: 1% 0 5% 0;
+        }
+
+        .form-box {
+            display: flex;
+            gap: 10px;
+            margin: 5px auto;
+
+        }
+
+        .form-box .lab {
+            text-align: right;
+            width: 50%;
+        }
+
+        .form-box .in input {
+            display: flex;
+            /* width: 50%; */
+            /* flex-direction: column; */
+        }
+
+        .lal {
+            color: red;
+        }
+
+        .per {
+            display: flex;
+            gap: 10px;
+        }
+
+        .per-left {
+            width: 50%;
+            display: flex;
+            justify-content: end;
+            text-align: right;
+        }
+
+        .per-left .per-bx,
+        .per-right .per-bx {
+            /* width: 50%; */
+            display: flex;
+            align-items: center;
+        }
+
+        .per-right {
+            display: flex;
+            width: 50%;
+
+        }
+
+        .per-left .per-bx .per-lab,
+        .per-right .per-bx .per-lab {
+            padding-right: 10px;
+        }
+
+        .per-in input {
+            width: 100%;
+        }
+
+        .btn {
+            width: fit-content;
+            margin: 5% auto 0;
+        }
+
+        .btn .sub,
+        .btn .res {
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            padding: 8px 20px;
+        }
+
+        .per-lab {
+            width: 50%;
+        }
+
+        .per-in {
+            width: 50%;
+            text-align: left;
+        }
+
+        .per-in {
+            width: 100%;
+        }
+
+        .per-left .per-bx,
+        .per-right .per-bx {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+        }
+
+        .per-in {
+            width: 100%;
+        }
+
+        label::before {
+            content: '*';
+            color: red;
+        }
+
+        .per-lab {
+            width: 105%;
+        }
+
+        .ri {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h2>user particulars</h2>
+        <!-- form box start  -->
+        <div class="form-box">
+            <div class="lab">
+                <label for=""> login id </label>
+            </div>
+            <div class="in">
+                <input type="text">
+            </div>
+        </div>
+        <!-- form box end  -->
+        <!-- form box start  -->
+        <div class="form-box">
+            <div class="lab">
+                <label for=""> password </label>
+            </div>
+            <div class="in">
+                <input type="text">
+            </div>
+        </div>
+        <!-- form box end  -->
+        <!-- form box start  -->
+        <div class="form-box">
+            <div class="lab">
+                <label for=""> confirm password </label>
+            </div>
+            <div class="in">
+                <input type="text">
+            </div>
+        </div>
+        <!-- form box end  -->
+        <h2>personal particulars</h2>
+        <div class="per">
+            <div class="per-left">
+                <div class="per-bx">
+                    <div class="per-lab"> <label for="">salutation</label></div>
+                    <div class="per-in">
+                        <!-- <input type="text"> -->
+                        <select name="" id="">
+                            <option value="">select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="per-right">
+                <div class="per-bx">
+                    <div class="per-lab ri"><label for="">first name</label></div>
+                    <div class="per-in">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="per">
+            <div class="per-left">
+                <div class="per-bx">
+                    <div class="per-lab"> <label for="">middle name</label></div>
+                    <div class="per-in">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="per-right">
+                <div class="per-bx">
+                    <div class="per-lab ri"><label for="">last name</label></div>
+                    <div class="per-in">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="per">
+            <div class="per-left">
+                <div class="per-bx">
+                    <div class="per-lab"> <label for="">resident status</label></div>
+                    <div class="per-in">
+                        <!-- <input type="text"> -->
+                        <select name="" id="">
+                            <option value="">select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="per-right">
+                <div class="per-bx">
+                    <div class="per-lab ri"><label for="">countery</label></div>
+                    <div class="per-in">
+                        <!-- <input type="text"> -->
+                        <select name="" id="">
+                            <option value="">select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="per">
+            <div class="per-left">
+                <div class="per-bx">
+                    <div class="per-lab"> <label for="">email id</label></div>
+                    <div class="per-in">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="per-right">
+                <div class="per-bx">
+                    <div class="per-lab ri"><label for="">mobile number</label></div>
+                    <div class="per-in">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Account particulars</h2>
+
+        <div class="per">
+            <div class="per-left">
+                <div class="per-bx">
+                    <div class="per-lab"> <label for="">salutation</label></div>
+                    <div class="per-in">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="per-right">
+                <div class="per-bx">
+                    <div class="per-lab"><label for="">salutation</label></div>
+                    <div class="per-in">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="per">
+            <div class="per-left">
+                <div class="per-bx">
+                    <div class="per-lab"> <label for="">salutation</label></div>
+                    <div class="per-in">
+                        <!-- <input type="text"> -->
+                        <select name="" id="">
+                            <option value="">select</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="per-right">
+                <div class="per-bx">
+                    <!-- <div class="per-lab">salutation</div>
+                    <div class="per-in">
+                        <input type="text">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <h2>DECLARATION</h2>
+
+        <P>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis, velit corrupti incidunt
+            assumenda blanditiis consequatur culpa ex esse ullam!
+        </P>
+        <P>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ut obcaecati, tempora sit quod ab minus
+            adipisci rem sed laboriosam debitis ipsa vero hic, esse totam asperiores labore ipsum voluptas minima
+            molestias distinctio? Animi sequi mollitia quae quibusdam est autem dolore incidunt nostrum, ipsam eum.
+        </P>
+
+        <div class="btn">
+            <a href="" class="sub">submit</a>
+            <a href="" class="res">reset</a>
+        </div>
+
+    </div>
+</body>
+</html>
